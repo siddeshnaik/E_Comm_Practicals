@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="applicant_form.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+  <!-- FONT Awesome-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css" integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog==" crossorigin="anonymous" />
+    
+    <title>Applicant Form</title>
+    
+</head>
+<body>
+    <main>
+        <p style="background-color: white;"> </p> 
+      <h1 style="background-color: rgb(37, 175, 218); color: white;font-size: 18px;padding-left: 30px;padding-top:5px; padding-bottom:5px; display:inline-flexbox;"><i class="fa fa-location-arrow" aria-hidden="true"></i>Applying For A New Job?</h1>
+    <!--  <p style="background-color: white;padding: 4px;"> </p> -->
+     
+      <form class="row g-3" style="padding-left: 25px;background-color:beige;padding-top: 20px;">
+
+        
+        <div class="col-md-6" style="padding-top: 25px;">
+            <label for="inputname" class="form-label" style="padding-right:5px">Name:</label>
+            <input type="text" class="form-control" id="inputname" name="applicant_name" placeholder="Enter your name">
+            
+          </div>
+        
+          <div class="col-md-6" style="padding-top:25px;">
+              <label for="inputemail" class="form-label"  style="padding-right:5px">Email Id:</label>
+              <input type="text" class="form-control" id="inputemail" name="applicant_email" placeholder="Enter your Email">
+              
+          </div>
+
+          <div class="col-md-10" style="padding-top:25px;">
+            <label for="inputemail" class="form-label"  style="padding-right:5px">Residential Address:</label>
+            <textarea id ="Address" input type="text" class="form-control" name="applicant_address" placeholder='Enter your Address'  ></textarea>
+            
+        </div>
+
+        <div class="col-md-10" style="padding-top: 25px;">
+            <label for="inputnumber" class="form-label" style="padding-right:5px">Contact Number:</label>
+            <!-- <input type="text" class="form-control" id="inputnumber" maxlength="10" minlength="1" > -->
+            <input type="text" class="form-control" id="inputnumber" name="applicant_number" placeholder="Enter your Contact number" >
+            
+          </div>
+
+          <div class="col-md-6" style="padding-top:25px;">
+              <label for="inputemail" class="form-label"  style="padding-right:5px">Resume: (Enter google drive link to your resume)</label>
+              <input type="text" class="form-control" id="inputemail" name="applicant_resume" placeholder="Enter your resume file drive link" >
+              
+          </div>
+        
+        
+
+        <div class="col-md-8" style="padding-top: 25px;">
+            <label for="inputposition" class="form-label"  style="padding-right:5px">Select the Job you are applying for:</label>
+            <!-- Postion- Department - Title - Full Time - Posted by-->
+            <select id="inputposition" class="form-select" name="applying_position_department_job_title_personUnderApplying"> 
+              <option selected disabled>Choose...</option>
+              
+              <option>Administration-Ponda-Kevin's Boss-Full Time-Kevin Peter</option>
+              <option>Enginnering-Margoa-General Manager-Part Time-Urvi Naik</option>
+              <option>Home-Margoa-Kevin's Nanny-Full Time-Kevin Peter</option>
+              <option>Finance-Margoa-Chartered Accountant-Part Time-Urvi Naik</option>
+              
+              
+          </select>
+          
+          
+        </div>
+
+        </br>
+        <div class="save_cancel" style="float:right;margin-right: 10px;text-align: right;" >
+            
+
+            <button type="button" class="btn btn-success" style="margin-right: 0.5%;">Submit</button>
+      </div>
+
+        </form>
+    
+         
+          
+
+
+    
+    </main>
+</body>
+</html>

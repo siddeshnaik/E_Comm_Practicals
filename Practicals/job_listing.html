@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+     <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+     <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <!-- CSS -->
+    <link rel="stylesheet" type="text/css" href="style_job.css">
+    <!-- FONT -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+    <!--FONT AWESOME ICONS -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.1/css/all.css" integrity="sha384-vp86vTRFVJgpjF9jiIGPEEqYqlDwgyBgEF109VFjmqGmIY/Y4HV4d3Gp2irVfcrp" crossorigin="anonymous">
+
+    <title>Job listing details</title>
+</head>
+<body>
+
+    <main>
+ 
+    <div class="bgimg">
+      <div class="overlay">
+        <nav class="navbar navbar-expand-md navbar-dark bg-dark nav-colour">
+            <div class="container">
+                <a class="navbar-brand font-weight-bold" href="#" >TrackEasy.com</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span></button>
+                
+                    <div class="collapse navbar-collapse text-center" id="navbarText">
+                        <ul class="navbar-nav ml-auto">
+                            <li class="nav-item active px-1">
+                              <a class="nav-link" href="job_page1.html">Jobs <span class="sr-only">(current)</span></a>
+                            </li>
+                            <!-- CHANGES MADE ON 24TH FEB- 10 pm Calender removed-->
+                            <li class="nav-item px-1">
+                              <a class="nav-link" href="#"><button class="btn btn-info btn-sm text-white border border-white">Log out</button></a>
+                            </li>
+                          </ul>
+                    </div>
+            </div>
+        </nav>
+            
+       </div>
+    </div>
+
+   <p style="background-color: white;"> </p> 
+      <h1 style="background-color: rgb(37, 175, 218); color: white;font-size: 18px;padding-left: 30px;padding-top:5px;display:inline-flexbox;"><i class="fa fa-location-arrow" aria-hidden="true"></i> Job Listing Details</h1>
+    <!--  <p style="background-color: white;padding: 4px;"> </p> -->
+     
+      <form class="row g-3" style="padding-left: 25px;background-color:beige;padding-top: 20px;" >
+        <div class="col-md-10">
+          <label for="inputTitle" class="form-label" >Title:</label>
+          <input type="text" class="form-control" id="inputTitle" name='title' placeholder="Enter Title">
+          
+        </div>
+
+
+        <div class="col-md-10">
+          <label for="inputJob_Description" class="form-label" style="padding-top: 10px;">Job Description:</label>
+
+        <!--CHANGES MADE ON 24TH FEB-10pm -->
+            <input type="text" class="form-control" id="inputJob_Description" style="height:200px;font-size:14pt;" name='job_description' placeholder="Enter Job Description">
+            
+        </div>
+
+
+        <!--CHANGES MADE ON 24TH FEB-10 pm -->
+        <div class="col-md-10">
+          <label for="inputAdd_appstage" class="form-label" style="padding-top: 10px;">Add Application Stages:</label>
+          <input type="text" class="form-control" id="inputAdd_appstage" style="height:100px;font-size:14pt;" name='application_stages' >
+          <!-- placeholder="Enter Application stages by default its First Interview, Second interview ,Final Interview, Job Offer " -->
+          
+        </div>
+
+        <!--CHANGES MADE ON 24TH FEB-10 pm -->
+        <div class="col-md-6">
+          <label for="inputPosId" class="form-label" style="padding-top: 20px;padding-right:5px">Position Identifier:</label>
+          <input type="text" class="form-control" id="inputPosId" name='position_identifier' placeholder="Enter job Position here">
+          
+        </div>
+
+        <!--CHANGES MADE ON 25tH FEB-10 pm -->
+        <div class="col-md-8" style="padding-top: 25px;">
+          <label for="inputEmpStat" class="form-label"  style="padding-right:5px">Employment Status:</label>
+          <select id="inputEmpStat" class="form-select" name='employment_status' placeholder="Enter job Position here" >
+            <option selected>Full-time</option>
+            <option>Part-time</option>
+          </select>
+          
+        </div>
+
+        <!--CHANGES MADE ON 25TH FEB-10 pm -->
+        <div class="col-md-6" style="padding-top: 25px;">
+          <label for="inputDept" class="form-label" style="padding-right:5px">Department:</label>
+          <input type="Dept" class="form-control" id="inputDept" name='department' placeholder="Enter Deparment here">
+          
+        </div>
+      
+        <!--CHANGES MADE ON 25TH FEB-12.15 am -->
+        <div class="col-md-6" style="padding-top:25px;">
+            <label for="inputCity" class="form-label"  style="padding-right:5px">City:</label>
+            <input type="City" class="form-control" id="inputCity" name='city' placeholder="Enter city here" >
+            
+        </div>
+
+
+          <!--CHANGES MADE ON 25TH FEB-12.15 am-->
+          <div class="col-md-6" style="padding-top: 25px;">
+            <label for="inputState" class="form-label"  style="padding-right:5px">State:</label>
+            <input type="State" class="form-control" id="inputState" name='state' placeholder="Enter state here">
+            
+          </div>
+
+          <!--CHANGES MADE ON 25TH FEB-12.15 am --> 
+          <div class="col-md-6" style="padding-top: 25px;">
+            <label for="inputCountry" class="form-label"  style="padding-right:5px">Country:</label>
+            <input type="Country" class="form-control" id="inputCountry" name='country' placeholder="Enter country here">
+            
+          </div>
+         
+          
+          <div class="input-group mb-3"  style="padding-top: 25px;padding-left: 15px;">
+            <label for="pubdate" style="padding-right:5px">Publish On:</label>
+            <input type="date" id="pubdate" name="pubdate">
+            
+          </div>
+
+          <div class="input-group mb-3" style="padding-top: 25px;padding-left: 15px;padding-bottom: 100px;">
+            <label for="duedate" style="padding-right:5px">Until:</label>
+            <input type="date" id="duedate" name="duedate">
+            
+          </div>
+          
+          <button type="button" class="btn btn-success" style="margin-right: 0.5%;"><a href="job_page1.html" style="color: white;">Save</a></button>
+
+          <button type="button" class="btn btn-primary">Cancel</button>          
+          
+          
+          
+        <!--  -->
+        <div>
+
+            
+        </div>  
+         
+
+          
+          
+         </form>
+         
+         
+
+
+      </main>
+
+        
+         
+
+</body>
+
+<!-- Optional JavaScript -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+ 
+    
+</html>
